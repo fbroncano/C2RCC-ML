@@ -83,8 +83,6 @@ if __name__ == "__main__":
         "y_pred": y_predict
     }).sort_values("x")
 
-    df_gradient.to_csv("plot_data.csv", sep=',', index=False)
-
     # Show results
     plt.figure(figsize=(8, 5))
     plt.plot(df_gradient["x"], df_gradient["y_true"], label="Real values", marker="o", linestyle="-")
